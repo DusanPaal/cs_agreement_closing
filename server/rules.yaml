@@ -1,0 +1,4 @@
+"####": # 4-digit company code
+  country: # (str) name of the country
+  threshold: # (float or int) Threshold amoutn for closing the agreements, negative values are evaluated to 0.
+  approvers: # (list of int) 8- digit approver IDs  for the liquidated agreements. If empty, no approvers are set.

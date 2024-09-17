@@ -1,0 +1,30 @@
+sap:
+  # (str) the SAP system to connect to (P25, Q25, ...)
+  system: 
+
+data:
+
+  # (str) name of the XLSM data input file
+  data_name: app.xlsm 
+
+  # (str) name of the PDF document that approves the agreement closing
+  document_name: Name.pdf 
+
+  # (str) name template format of the XLSX report, where $company_code$ 
+  # and $date$ are placeholders for the company code and the current date.
+  report_name: report_$company_code$_$date$.xlsx
+
+   # (str) name of the sheet in the report
+  report_sheet_name:
+
+messages:
+  requests:
+    account:    # (str) name of the account to search the request emials
+    mailbox:    # (str) email address of the mailbox to search the request emials
+    server:     # (str) name of the email-receiving server
+  notifications:
+    send: True  # (bool) whether to send notifications to users
+    sender:     # (str) email address of the sender
+    subject:    # (str) subject of the email
+    host:       # (str) name of the SMTP server
+    port:       # (int) SMTP port number
